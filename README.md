@@ -6,13 +6,16 @@
 
 > 👨‍🏫 Projeto proposto pelo professor: Glauco Toledo.
 
-> Commit: 28/11/2024 - 15:41 ( Criação dos repositórios e adição dos dados do banco h2 )
+> Commit: 28/11/2024 - 16:22 ( Adição de dados ao banco de dados )
 
-## Repositories:
-### Criado a pasta repositories e o arquivo AgendaRepository.java. Onde nesta primeira versão temos apenas a criação e adicionado o Extends para o JpaRepository.
+## Banco de dados - H2:
+### Criado o arquivo 'data.sql' em: src > main > resources. E neste arquivo inseri código para inserção de dois dados ao banco de dados. Código inserido:
+![Código usado para inserir dados no banco de dados](./assets/datasql.png)
 
-## Banco H2 funcionado:
-![Banco h2](./assets/h2.png)
+#
+
+### Banco H2 com os novos dados já inseridos:
+![Banco h2 mostrando os dados já inseridos](./assets/h2.png)
 
 #
 
