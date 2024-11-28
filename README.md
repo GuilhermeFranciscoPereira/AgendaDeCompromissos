@@ -6,16 +6,11 @@
 
 > 👨‍🏫 Projeto proposto pelo professor: Glauco Toledo.
 
-> Commit: 28/11/2024 - 16:56 ( Criação do arquivo para os serviços e criação das dtos )
+> Commit: 28/11/2024 - 17:14 ( Criação dos mappers )
 
-## Services:
-### Criado a pasta e o arquivo para os serviços, mas está vazio por enquanto.
-
-## Dtos:
-### Criado a pasta para as Dtos e os dois arquivos, tanto o request quando o response.
-### No request foi feito as validações, como não pode ser em branco, tamanho mínimo e etc.
-### Foto de como está as validações:
-![Códigos para fazer a validação](./assets/validations.png)
+## Mapper:
+### Mappers criado, já realizado o mapper tanto para o response quanto para o request. Foto do código:
+![Códigos para fazer a validação](./assets/mappers.png)
 
 #
 
