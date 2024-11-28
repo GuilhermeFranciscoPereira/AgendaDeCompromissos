@@ -6,14 +6,13 @@
 
 > 👨‍🏫 Projeto proposto pelo professor: Glauco Toledo.
 
-> Commit: 28/11/2024 - 15:18 ( Criação das entidades )
+> Commit: 28/11/2024 - 15:41 ( Criação dos repositórios e adição dos dados do banco h2 )
 
-## Entidades:
-### Criado as entidades, onde nesta primeira versão temos:
-- Adição da chave primária sendo o ID;
-- Gerando um valor aleatório para o ID;
-- Criado os Getters e Setters para cada;
-- Adicionado o "hashCode" e o "equals"
+## Repositories:
+### Criado a pasta repositories e o arquivo AgendaRepository.java. Onde nesta primeira versão temos apenas a criação e adicionado o Extends para o JpaRepository.
+
+## Banco H2 funcionado:
+![Banco h2](./assets/h2.png)
 
 #
 
