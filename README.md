@@ -6,16 +6,16 @@
 
 > 👨‍🏫 Projeto proposto pelo professor: Glauco Toledo.
 
-> Commit: 28/11/2024 - 16:22 ( Adição de dados ao banco de dados )
+> Commit: 28/11/2024 - 16:56 ( Criação do arquivo para os serviços e criação das dtos )
 
-## Banco de dados - H2:
-### Criado o arquivo 'data.sql' em: src > main > resources. E neste arquivo inseri código para inserção de dois dados ao banco de dados. Código inserido:
-![Código usado para inserir dados no banco de dados](./assets/datasql.png)
+## Services:
+### Criado a pasta e o arquivo para os serviços, mas está vazio por enquanto.
 
-#
-
-### Banco H2 com os novos dados já inseridos:
-![Banco h2 mostrando os dados já inseridos](./assets/h2.png)
+## Dtos:
+### Criado a pasta para as Dtos e os dois arquivos, tanto o request quando o response.
+### No request foi feito as validações, como não pode ser em branco, tamanho mínimo e etc.
+### Foto de como está as validações:
+![Códigos para fazer a validação](./assets/validations.png)
 
 #
 
