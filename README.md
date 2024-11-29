@@ -6,10 +6,10 @@
 
 > 👨‍🏫 Projeto proposto pelo professor: Glauco Toledo.
 
-> Commit: 29/11/2024 - 16:20 ( Criado a função de atualizar um item do banco de dados )
+> Commit: 29/11/2024 - 16:41 ( Criado a função para deletar um item do banco de dados )
 
 ## services/controllers
-### Adição do código para adicionar a função de atualizar um item do banco de dados.
+### Adição do código para adicionar a função de deletar um item do banco de dados.
 
 #
 

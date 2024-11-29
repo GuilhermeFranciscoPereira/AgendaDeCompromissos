@@ -12,6 +12,8 @@ import com.appointmentAgenda.agenda.entities.Agenda;
 import com.appointmentAgenda.agenda.mappers.AgendaMapper;
 import com.appointmentAgenda.agenda.repositories.AgendaRepository;
 
+import jakarta.persistence.EntityNotFoundException;
+
 @Service
 public class AgendaService {
 
@@ -35,5 +37,13 @@ public class AgendaService {
         aux.setDate(agenda.date());
 
         repository.save(aux);
+    }
+
+    public void delete(long id) {
+        if(repository.existsById(id)) {
+            repository.deleteById(id);
+        }  else {
+            throw new EntityNotFoundException("Produto não cadastrado");
+        }
     }
 }
