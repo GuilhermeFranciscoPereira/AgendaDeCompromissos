@@ -26,4 +26,14 @@ public class AgendaService {
         Agenda newAgenda = repository.save(AgendaMapper.toEntity(agenda));
         return AgendaMapper.toDTO(newAgenda);
     }
+
+    public void uptade(AgendaRequest agenda, long id) {
+        Agenda aux = repository.getReferenceById(id);
+
+        aux.setName(agenda.name());
+        aux.setLocal(agenda.local());
+        aux.setDate(agenda.date());
+
+        repository.save(aux);
+    }
 }
