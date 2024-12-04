@@ -31,6 +31,11 @@ public class AgendaController {
         return ResponseEntity.ok(service.getAllAgenda());
     }
 
+    @GetMapping("{id}")
+    public ResponseEntity<AgendaResponse> getAgenda(@PathVariable long id) {
+        return ResponseEntity.ok(service.getAgendaById(id));
+    }
+
     @PostMapping()
     public ResponseEntity<AgendaResponse> saveProduct(@Validated @RequestBody AgendaRequest agenda ) {
         AgendaResponse newAgenda = service.saveNewAgenda(agenda);

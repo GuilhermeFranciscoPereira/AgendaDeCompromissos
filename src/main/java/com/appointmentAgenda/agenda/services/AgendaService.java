@@ -24,6 +24,14 @@ public class AgendaService {
         return repository.findAll().stream().map(p -> AgendaMapper.toDTO(p)).collect(Collectors.toList());
     }
 
+    public AgendaResponse getAgendaById(long id) {
+        Agenda agenda = repository.findById(id).orElseThrow(
+            () -> new EntityNotFoundException("Compromisso não cadastrado")
+        );
+
+        return AgendaMapper.toDTO(agenda);
+    }
+
     public AgendaResponse saveNewAgenda(AgendaRequest agenda) {
         Agenda newAgenda = repository.save(AgendaMapper.toEntity(agenda));
         return AgendaMapper.toDTO(newAgenda);
