@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,13 +36,13 @@ public class AgendaController {
     }
 
     @PostMapping()
-    public ResponseEntity<AgendaResponse> saveProduct(@Validated @RequestBody AgendaRequest agenda ) {
+    public ResponseEntity<AgendaResponse> saveProduct(@RequestBody AgendaRequest agenda ) {
         AgendaResponse newAgenda = service.saveNewAgenda(agenda);
         return ResponseEntity.created(null).body(newAgenda);
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Void> updateAgenda(@PathVariable long id, @Validated @RequestBody AgendaRequest agenda) {
+    public ResponseEntity<Void> updateAgenda(@PathVariable long id, @RequestBody AgendaRequest agenda) {
         service.uptade(agenda, id);
         return ResponseEntity.ok().build();
     }
